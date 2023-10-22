@@ -1,0 +1,114 @@
+body {
+  font-family: Arial, sans-serif; /* Arial - это встроенный шрифт, sans-serif - замена в случае недоступности Arial */
+  font-size: 16px;
+}
+.nav {
+     white-space: nowrap; /* Предотвратит перенос строк внутри контейнера */
+    }
+    .nav-element {
+        display: inline-block;
+        margin-right:10px; 
+        
+      }
+      .img {
+        width: 100%;
+        max-width: 500%;
+        height: auto;
+        max-height: 480px;
+        object-fit: cover;
+        margin: 10px auto; /* Равномерные отступы по вертикали и горизонтали */
+        padding: 10px 0; /* Отступы сверху и снизу */
+      }
+      
+      @media (max-width: 768px) {
+        .img {
+          width: 100%; /* Максимальная ширина на маленьких экранах */
+          max-width: 100%; /* Для уверенности ограничьте максимальную ширину */
+          height:500px; /* Автоматическое масштабирование высоты для сохранения пропорций */
+          margin: 10px auto; /* Отступы на маленьких экранах */
+          padding: 10px 0; /* Отступы сверху и снизу на маленьких экранах */
+        }
+      }
+      @media (max-width: 1880px) {
+        .img {
+          width: 100%; /* Максимальная ширина на маленьких экранах */
+         
+          height:500px; /* Автоматическое масштабирование высоты для сохранения пропорций */
+          margin: 10px auto; /* Отступы на маленьких экранах */
+          padding: 10px 0; /* Отступы сверху и снизу на маленьких экранах */
+        }
+      }
+        
+      
+      .content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; /* Равномерное распределение элементов по горизонтали */
+        gap: 10px; /* Добавить равномерные отступы между элементами */
+        background-color: blue;
+        padding: 10px; /* Отступы внутри .content для обеспечения одинаковых отступов по всему контейнеру */
+      }
+      
+        .contacts-info {
+          text-align: center; /* Выравнивание по центру для
+           контейнера с изображением и кнопкой */
+          background-color: aquamarine;
+          width: 100px;
+          height: 900px;
+          flex-basis: calc(33.33% - 20px);
+          margin: 2px; /* Добавить отступы со всех сторон в 10px */
+      }
+      footer{background-color: #fa7a30; /* Задайте HEX или RGB цвет */
+        color: #fff; /* Задайте цвет текста, чтобы он был видимым на фоне */
+        padding: 20px; /* Добавьте отступ, чтобы текст не был слишком близко к краям футера */}
+        .position{
+          white-space: nowrap; /* Предотвратит перенос строк внутри контейнера */
+          display: inline-block;
+          margin-right: 50px; /* Добавить небольшой отступ между элементами */
+        }
+        .button { 
+          background-color: #058536;
+          color: #1c2fda;
+          width: 100px;
+          height: 50px;
+          border-radius: 5px;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 180px; /* Добавить отступ снизу в 10px */
+        }
+        .button:hover {
+          background-color: #aa00cc; /* Цвет при наведении */
+        }
+        .modal {
+          display: none;
+          position: fixed; /* Фиксированное позиционирование */
+          top: 0;
+          left: 0;
+          width: 100%; /* Занимает всю ширину окна */
+          height: 100%; /* Занимает всю высоту окна */
+          background-color: rgba(0, 0, 0, 0.7); /* Полупрозрачный черный фон */
+          overflow: auto; /* Добавьте полосы прокрутки при необходимости */
+        }
+        
+        .modal-content {
+          background-color: #fff; /* Цвет фона модального окна */
+          margin: 20% auto; /* Располагает модальное окно по вертикали в центре */
+          padding: 20px;
+          border: 1px solid #000; /* Граница для модального окна */
+          border-radius: 5px; /* Закругленные углы */
+          max-width: 400px; /* Максимальная ширина модального окна */
+          text-align: center; /* Выравнивание текста по центру */
+        }
+        
+        .close {
+          color: #888;
+          float: right; /* Расположите кнопку закрытия справа */
+          font-size: 20px;
+          font-weight: bold;
+          cursor: pointer;
+        }
+        
+        .close:hover {
+          color: #000; /* Изменение цвета при наведении на кнопку закрытия */
+        }
