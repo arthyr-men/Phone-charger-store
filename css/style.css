@@ -1,8 +1,9 @@
 body {
   font-family: Arial, sans-serif; /* Arial - это встроенный шрифт, sans-serif - замена в случае недоступности Arial */
-  font-size: 16px;
+  font-size: 20px;
 }
 .nav {
+  background-color: #fa7a30;
      white-space: nowrap; /* Предотвратит перенос строк внутри контейнера */
     }
     .nav-element {
@@ -90,14 +91,18 @@ body {
           background-color: rgba(0, 0, 0, 0.7); /* Полупрозрачный черный фон */
           overflow: auto; /* Добавьте полосы прокрутки при необходимости */
         }
-        
+        .img-modal{
+          height: 500px; ;
+          width: 500px; ;
+        }
         .modal-content {
           background-color: #fff; /* Цвет фона модального окна */
           margin: 20% auto; /* Располагает модальное окно по вертикали в центре */
           padding: 20px;
           border: 1px solid #000; /* Граница для модального окна */
           border-radius: 5px; /* Закругленные углы */
-          max-width: 400px; /* Максимальная ширина модального окна */
+          max-width: 700px;
+          max-height: 700px; /* Максимальная ширина модального окна */
           text-align: center; /* Выравнивание текста по центру */
         }
         
@@ -111,4 +116,12 @@ body {
         
         .close:hover {
           color: #000; /* Изменение цвета при наведении на кнопку закрытия */
+        }
+        .img-logo {
+          background-color: #fa7a30;
+          background-color: transparent; /* Устанавливаем прозрачный фон */
+          background-size: cover;
+          color: #fa7a30;
+          height: 50px;
+          width: 80px;
         }
