@@ -1,0 +1,2 @@
+document.addEventListener("DOMContentLoaded",(function(){for(var n=1;n<=6;n++){var e=document.getElementById("openModal"+n),t=document.getElementById("myModal"+n),d=document.getElementById("closeModal"+n);e.addEventListener("click",o(t)),d.addEventListener("click",c(t)),window.addEventListener("click",i(t))}function o(n){return function(){n.style.display="block"}}function c(n){return function(){n.style.display="none"}}function i(n){return function(e){e.target==n&&(n.style.display="none")}}}));
+//# sourceMappingURL=index.09a62a81.js.map
