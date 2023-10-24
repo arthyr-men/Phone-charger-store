@@ -12,6 +12,7 @@ body {
         
       }
       .img {
+        border-radius: 30px;
         width: 100%;
         max-width: 500%;
         height: auto;
@@ -23,6 +24,7 @@ body {
       
       @media (max-width: 768px) {
         .img {
+          border-radius: 30px;
           width: 100%; /* Максимальная ширина на маленьких экранах */
           max-width: 100%; /* Для уверенности ограничьте максимальную ширину */
           height:500px; /* Автоматическое масштабирование высоты для сохранения пропорций */
@@ -33,7 +35,7 @@ body {
       @media (max-width: 1880px) {
         .img {
           width: 100%; /* Максимальная ширина на маленьких экранах */
-         
+         border-radius: 30px;
           height:500px; /* Автоматическое масштабирование высоты для сохранения пропорций */
           margin: 10px auto; /* Отступы на маленьких экранах */
           padding: 10px 0; /* Отступы сверху и снизу на маленьких экранах */
@@ -46,14 +48,15 @@ body {
         flex-wrap: wrap;
         justify-content: space-between; /* Равномерное распределение элементов по горизонтали */
         gap: 10px; /* Добавить равномерные отступы между элементами */
-        background-color: blue;
+        background-color: #fa7a30;
         padding: 10px; /* Отступы внутри .content для обеспечения одинаковых отступов по всему контейнеру */
       }
       
         .contacts-info {
           text-align: center; /* Выравнивание по центру для
            контейнера с изображением и кнопкой */
-          background-color: aquamarine;
+           border-radius: 30px;
+          background-color: rgb(234, 247, 242);
           width: 100px;
           height: 900px;
           flex-basis: calc(33.33% - 20px);
@@ -64,12 +67,13 @@ body {
         padding: 20px; /* Добавьте отступ, чтобы текст не был слишком близко к краям футера */}
         .position{
           white-space: nowrap; /* Предотвратит перенос строк внутри контейнера */
+          border-radius: 30px;
           display: inline-block;
           margin-right: 50px; /* Добавить небольшой отступ между элементами */
         }
         .button { 
           background-color: #058536;
-          color: #1c2fda;
+          color: #020308;
           width: 100px;
           height: 50px;
           border-radius: 5px;
